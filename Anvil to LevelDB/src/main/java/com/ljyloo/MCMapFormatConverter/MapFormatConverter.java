@@ -344,7 +344,7 @@ public class MapFormatConverter {
 								int yBase = (int)section.getByte("Y");
 								
 								//ignore blocks above 128 height
-								if(yBase >= 8)
+		    				if(yBase >= 8)
 									continue;
 								
 								byte[] blocks = section.getByteArray("Blocks");
@@ -570,7 +570,6 @@ public class MapFormatConverter {
 				}
 			}
 		} catch (Exception e) {
-			throw e;
 		}
 		
 	}
